@@ -6,6 +6,14 @@
 Code is coming soon
 
 
+### Requirements:
+Python
+
+PyTorch  : https://pytorch.org/get-started/locally
+
+CompressAI : https://github.com/InterDigitalInc/CompressAI
+
+
 
 
 

@@ -18,7 +18,6 @@ from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from torch import Tensor
 import torch
 import torch.nn as nn
-from .win_attention import WinBasedAttention
 
 __all__ = [
     "conv3x3",
