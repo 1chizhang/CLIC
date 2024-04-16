@@ -508,7 +508,7 @@ class CLIC_base(CompressionModel):
         return {"x_hat": x_hat}
 
 if __name__ == '__main__':
-    model = WACNN()
+    model = CLIC_base()
     # print(model)
     print("params:",sum(param.numel() for param in model.parameters()))
 

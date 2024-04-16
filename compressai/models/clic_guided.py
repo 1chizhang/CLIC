@@ -422,6 +422,7 @@ class CLIC(CompressionModel):
                 b = b.permute(0, 2, 1)
                 loss_for_guided += torch.sum(-(torch.matmul(torch.matmul(b, r_out), A)))
                 y_hat_slice_for_gs =(torch.sum(A.unsqueeze(-1)*r_out.permute(0,2,1).unflatten(2,[H,W]),dim = 1,keepdim=True)+y_slice_).reshape(B,C,H,W).contiguous()
+                # channel implementation is coming soon
             y_hat_slices_for_gs.append(y_hat_slice_for_gs)
             y_likelihood.append(y_slice_likelihood)
 
